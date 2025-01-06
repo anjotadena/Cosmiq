@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
     environment:
-      FLASK_ENV: production
+      FLASK_ENV: development
       DATABASE_URI: postgresql://user:password@db:5432/cosmiq
 
   frontend:

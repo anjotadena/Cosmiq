@@ -1,0 +1,9 @@
+{
+  "venvPath": "/usr/local", // Path to Python inside Docker
+  "pythonVersion": "3.12", // Specify Python version
+  "venv": "bin", // Path to virtual environment inside Docker
+  "reportMissingImports": false, // Suppress missing imports if needed
+  "ignore": [
+    "reportGeneralTypeIssues" // Optionally suppress specific errors
+  ]
+}

@@ -1,10 +1,11 @@
 from flask import Flask
+from .extensions import db
 
 
-def create_app(config_name="config.Config"):
+def create_app():
     app = Flask(__name__)
-    app.config.from_object(config_name)
+    app.config.from_object("app.config.Config")
 
     db.init_app(app)
 
-    # Redis
+    return app
