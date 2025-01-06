@@ -9,5 +9,9 @@ COPY . .
 
 RUN yarn build
 
-CMD ["yarn", "dev"]
+# Expose Vite's default dev server port
+EXPOSE 5173
+
+# Run the development server, binding to 0.0.0.0
+CMD ["yarn", "dev", "--host"]
 
