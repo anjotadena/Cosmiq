@@ -3,6 +3,7 @@
   "pythonVersion": "3.12", // Specify Python version
   "venv": "bin", // Path to virtual environment inside Docker
   "reportMissingImports": false, // Suppress missing imports if needed
+  "reportMissingTypeStubs": false
   "ignore": [
     "reportGeneralTypeIssues" // Optionally suppress specific errors
   ]

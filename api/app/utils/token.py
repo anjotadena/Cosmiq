@@ -1,6 +1,6 @@
 import jwt
 from datetime import datetime, timedelta
-from app.config import Config
+from config import Config
 
 
 def generate_reset_token(user_id):
